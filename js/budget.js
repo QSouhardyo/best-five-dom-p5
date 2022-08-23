@@ -31,13 +31,10 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const coachSalary = parseFloat(coachString);
 
     if (isNaN(managerSalary) || isNaN(coachSalary)) {
-        alert('lease enter number')
+        alert('Please enter number')
         return
     }
-
-    const totalElement = document.getElementById('total-field')
-    const totalString = totalElement.innerText;
-    const totalAmount = parseFloat(totalString);
+    //  per player input
 
     const perPlayerElement = document.getElementById('per-Player');
     const perPlayerString = perPlayerElement.value;
@@ -48,6 +45,11 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const playerCostAmount = parseFloat(playerCostString);
 
     playerCostElement.innerText = perPlayerValue * cartArray.length;
+
+    // total amount
+    const totalElement = document.getElementById('total-field')
+    const totalString = totalElement.innerText;
+    const totalAmount = parseFloat(totalString);
 
     totalElement.innerText = managerSalary + coachSalary + playerCostAmount;
 })
