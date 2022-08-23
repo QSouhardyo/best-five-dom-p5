@@ -1,5 +1,5 @@
 const cartArray = [];
-
+// function to display of players
 function display(playerCart) {
 
 
