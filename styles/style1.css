@@ -1,0 +1,159 @@
+/*--- fonts ------  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/*---- common----  */
+body {
+    font-family: 'Overpass', sans-serif;
+
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700px;
+}
+
+
+/*----- Banner ----- */
+.banner {
+    width: 90%;
+    height: 500px;
+    margin: 40px auto;
+    background-color: rgba(0, 10, 0, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+
+
+
+
+}
+
+.banner-write {
+
+    margin-top: 200px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.banner-pic img {
+
+    width: 35%;
+    margin-bottom: 0;
+    position: relative;
+    left: 750px;
+    bottom: 220px;
+    height: 400px;
+    opacity: 0.6;
+
+
+}
+
+.banner-para {
+    margin-bottom: 30px;
+    margin-left: 50px
+}
+
+
+
+/* main full work  */
+.btn-card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+.card-button {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+
+/*----- Budget and calculation-----  */
+
+
+.buttons {
+
+    background-color: rgb(139, 127, 127);
+    height: 375px;
+    width: 250px;
+    padding: 2px;
+    position: relative;
+    right: 2px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*-----cards-----*/
+.card {
+    border: .10px solid rgb(236, 232, 232);
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+
+
+}
+
+
+.players-img {
+    height: 200px;
+    width: 200px;
+}
+
+
+
+h4 {
+    margin: auto 10px auto 10px;
+}
+
+
+
+.card-detail {
+    padding: 5px;
+}
+
+
+
+/*----- footer part----  */
+.footer-banner {
+    background-image: linear-gradient(black, black);
+    background-size: cover;
+    padding: 10px;
+
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    color: salmon;
+}
+
+.items {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    color: salmon;
+    font-size: 16px;
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.ficon {
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+}

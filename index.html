@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cup</title>
+    <!-- icon  -->
+    <script src="https://kit.fontawesome.com/8221d640d2.js" crossorigin="anonymous"></script>
+    <!-- stylesheet  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style1.css">
+
+</head>
+
+<body>
+    <!-- banner satrt  -->
+    <header>
+        <section class="banner">
+            <div class="banner-write">
+                <h2>Welcome To Qatar World Cup 2022</h2>
+                <p class="banner-para">Let's ready to cheers for your favourite team and players. Time to pick some of
+                    your favourite player.</p>
+
+            </div>
+            <div class="banner-pic">
+                <img src="images/Banner Image.png" alt="">
+            </div>
+
+        </section>
+    </header>
+    <!-- banner end  -->
+
+    <!-- Budget and players card  -->
+    <main>
+        <section class="btn-card my-5">
+
+            <div class="card-button">
+                <div class="card">
+
+                    <div class="card-image">
+                        <img class="img-fluid players-img" src="images/Ronaldo.jpg" alt="">
+                    </div>
+                    <div class="card-detail text-center">
+                        <h5>Cristiano Ronaldo</h5>
+                        <button onclick="addToCart(this)" type="button"
+                            class="btn btn-primary px-5 py-2">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-image">
+                        <img class="img-fluid players-img" src="images/Neymar.jpg">
+                    </div>
+                    <div class="card-detail text-center">
+                        <h5>Neymar Jr</h5>
+                        <button onclick="addToCart(this)" type="button"
+                            class="btn btn-primary px-5 py-2">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-image">
+                        <img class="img-fluid players-img" src="images/Lionel-Messi.jpg" alt="">
+                    </div>
+                    <div class="card-detail text-center">
+                        <h5>Lionel Messi</h5>
+                        <button onclick="addToCart(this)" type="button"
+                            class="btn btn-primary px-5 py-2">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-image">
+                        <img class="img-fluid players-img" src="images/mbappe.jpg" alt="">
+                    </div>
+                    <div class="card-detail text-center">
+                        <h5>Kylian Mbappé</h5>
+                        <button onclick="addToCart(this)" type="button"
+                            class="btn btn-primary px-5 py-2">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-image">
+                        <img class="img-fluid players-img" src="images/becker.jpg" alt="">
+                    </div>
+                    <div class="card-detail text-center">
+                        <h5>Alisson Becker</h5>
+                        <button onclick="addToCart(this)" type="button"
+                            class="btn btn-primary px-5 py-2">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-image">
+                        <img class="img-fluid players-img" src="images/sergio.jpg" alt="">
+                    </div>
+                    <div class="card-detail text-center">
+                        <h5>Sergio Ramos</h5>
+                        <button onclick="addToCart(this)" type="button"
+                            class="btn btn-primary px-5 py-2">Select</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row ">
+                <div class="row">
+                    <div class="col-12 text-white buttons">
+                        <h5 class="text-center mt-3 fs-3">Select Your Fav Player</h5>
+                        <ol id="player-list" class="text-white">
+
+                        </ol>
+
+                    </div>
+                </div>
+                <div class="row mt-3 ">
+                    <div class="col-12 text-white buttons text-center">
+                        <h5 class="text-center mt-3 fs-3">Budget</h5>
+                        <p>Per Player : <input id="per-Player" class="w-50" type="number" name="" id=""></p>
+                        <button id="calculate" class="btn btn-primary px-5 py-1">Calculate</button>
+                        <p class="mt-3">Player Expenses: $ <span id="player-cost">00</span> </p>
+                        <p>Manager: <input id="manager-input" class="w-50" type="number" name="" id=""></p>
+                        <p>Coach: <input id="coach-input" class="w-50" type="number" name="" id=""></p>
+                        <button id="calculate-total" class="btn btn-primary px-5 py-1">Calculate Total</button>
+                        <p class="mt-3">Total: $ <span id="total-field">00</span> </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <!-- footer  -->
+    <footer>
+        <div class="footer-banner">
+            <h3>Goal</h3>
+            <hr>
+
+            <div class="items">
+                <li>Contact Us </li>
+                <li>Terms of Service </li>
+                <li>Privacy Policy </li>
+                <li>Privacy Settings </li>
+
+            </div>
+            <div class="footer-icons mb-3">
+                <i class="fa-brands fa-facebook ficon"></i>
+                <i class="fa-brands fa-twitter ficon"></i>
+                <i class="fa-brands fa-instagram ficon"></i>
+            </div>
+            <p class="text-center text-white">@Quazi Aumio Souhardyo</p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/budget.js"></script>
+    <script src="js/fav-player.js"></script>
+</body>
+
+
+</html>
