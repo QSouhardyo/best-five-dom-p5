@@ -1,7 +1,7 @@
 
 
 document.getElementById('calculate').addEventListener('click', function () {
-
+    //  per player input
     const perPlayerElement = document.getElementById('per-Player');
     const perPlayerString = perPlayerElement.value;
     const perPlayerValue = parseFloat(perPlayerString);
