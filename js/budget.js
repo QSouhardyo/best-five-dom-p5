@@ -25,7 +25,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const managerElement = document.getElementById('manager-input');
     const managerString = managerElement.value;
     const managerSalary = parseFloat(managerString);
-
+    // coach input
     const coachElement = document.getElementById('coach-input');
     const coachString = coachElement.value;
     const coachSalary = parseFloat(coachString);
